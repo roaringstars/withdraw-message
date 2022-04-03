@@ -2,7 +2,8 @@
 
 namespace Roaringstars\WithdrawMessage;
 
-class WithdrawMessage {       
+class WithdrawMessage
+{
     public $message;
 
     public function __construct($name)
