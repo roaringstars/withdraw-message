@@ -1,0 +1,36 @@
+{
+    "name": "roaringstars/withdraw-message",
+    "type": "library",
+    "description": "Collaborative custom message while withdrawing Bitcoin from Lightning ATM (Mainan)",
+        "homepage": "https://github.com/roaringstars/withdraw-message",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "roaringstars",
+            "email": "no-reply@roaringstars.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Roaringstars\\WithdrawMessage\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=8.0"
+    },
+    "scripts": {
+        "lint": [
+            "cp phpcs.xml.dist phpcs.xml",
+            "vendor/bin/phpcs -p",
+            "vendor/bin/phpstan analyse --memory-limit=-1"
+        ],
+        "lintfix": [
+            "vendor/bin/phpcbf -v"
+        ]   
+    },
+    "require-dev": {
+        "phpstan/extension-installer": "^1.1",
+        "squizlabs/php_codesniffer": "^3.6.0"
+    }
+}
