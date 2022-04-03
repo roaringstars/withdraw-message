@@ -4,7 +4,6 @@ namespace Roaringstars\WithdrawMessage;
 
 class WithdrawMessage
 {
-
     /**
      * @var array<string> $messages
      */
