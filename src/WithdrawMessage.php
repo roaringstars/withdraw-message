@@ -4,9 +4,12 @@ namespace Roaringstars\WithdrawMessage;
 
 class WithdrawMessage
 {
-    public $message;
+    /**
+     * @var array<string> $message
+     */
+    public array $message;
 
-    public function __construct($name)
+    public function __construct()
     {
         /**
          * Edit this array please.... have fun! :)
@@ -25,6 +28,6 @@ class WithdrawMessage
     public function random(): string
     {
         $randomIndex = array_rand($this->messages);
-        return (string)  substr($this->messages[$randomIndex], 0, 32);
+        return (string) substr($this->messages[$randomIndex], 0, 32);
     }
 }
