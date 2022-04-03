@@ -2,11 +2,12 @@
 
 namespace Roaringstars\WithdrawMessage;
 
-/**
- * @property array<string> $messages
- */
 class WithdrawMessage
 {
+
+    /**
+     * @var array<string> $messages
+     */
     public array $messages;
 
     public function __construct()
